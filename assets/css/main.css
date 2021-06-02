@@ -353,6 +353,7 @@ body {
   color: #0c0910;
   font-weight: 700;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .form {
@@ -433,7 +434,7 @@ body {
   .nav__list {
     display: inline-block;
     float: right;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
   }
   .nav__item {
     display: inline-block;
@@ -448,11 +449,12 @@ body {
   .nav__burger {
     display: none;
   }
+
+  .hamburger-icon {
+    display: none;
+  }
 }
 @media (min-width: 1280px) {
-  .nav {
-    position: static;
-  }
   .nav__logo {
     width: 5%;
   }
@@ -460,6 +462,10 @@ body {
     padding-top: 0.5rem;
   }
 }
+.container {
+  height: 100vh;
+}
+
 .main {
   width: 100%;
   margin-top: 4rem;
@@ -569,6 +575,7 @@ body {
   background-color: #ffffff;
   border: none;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -591,13 +598,10 @@ body {
   .footer {
     width: 40%;
     position: absolute;
-    bottom: 0;
+    bottom: -9%;
   }
   .footer__newsletter {
     width: 77%;
-  }
-  .footer__button {
-    width: 1%;
   }
   .footer__button button {
     padding: 1.5rem;
@@ -606,7 +610,7 @@ body {
 @media (min-width: 1400px) {
   .footer {
     position: absolute;
-    bottom: 0;
+    bottom: -9%;
   }
 }
 
