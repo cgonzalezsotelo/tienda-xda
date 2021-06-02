@@ -391,20 +391,42 @@ body {
 }
 .nav__list {
   display: none;
+  text-align: center;
+  list-style: none;
+  margin-left: -40px;
 }
-.nav__burger {
-  display: inline-block;
-  position: relative;
-  float: right;
-  width: 10%;
-  padding-right: 1rem;
-  padding-top: 7%;
+.nav__item {
+  padding-bottom: 1rem;
+}
+.nav__item a {
+  text-decoration: none;
+  color: #0c0910;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 .nav__line {
   width: 70%;
   border: 2px solid #0c0910;
   margin: 0.2rem 0;
   border-radius: 5px;
+  width: 10%;
+}
+
+.hamburger-icon {
+  position: relative;
+  float: right;
+  font-size: 30px;
+  padding-top: 7%;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .nav__list {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -427,7 +449,7 @@ body {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .nav {
     position: static;
   }
@@ -471,6 +493,7 @@ body {
   .main__img {
     height: 40vh;
     object-fit: cover;
+    margin-top: 4.5rem;
   }
   .main__container-text {
     padding: 1rem 4rem;
@@ -482,7 +505,13 @@ body {
     width: 70%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
+  .main {
+    height: 100vh;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 0;
+  }
   .main__img {
     width: 55%;
     height: 100vh;
@@ -495,9 +524,21 @@ body {
   }
   .main__title {
     width: 30%;
+    padding-top: 4rem;
   }
   .main__text {
     width: 30%;
+  }
+}
+@media (min-width: 1400px) {
+  .main {
+    height: 100vh;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .main__title {
+    padding-top: 4rem;
   }
 }
 .footer {
@@ -531,6 +572,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
   .footer__newsletter {
     width: 80%;
     padding-left: 4rem;
@@ -542,7 +587,7 @@ body {
     padding: 0.8rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .footer {
     width: 40%;
     position: absolute;
@@ -556,6 +601,12 @@ body {
   }
   .footer__button button {
     padding: 1.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .footer {
+    position: absolute;
+    bottom: 0;
   }
 }
 

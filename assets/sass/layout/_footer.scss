@@ -30,6 +30,8 @@
 
 @media (min-width: $breakpoint-tablet-md) {
   .footer {
+    position: absolute;
+    bottom: 0;
     &__newsletter {
       width: 80%;
       padding-left: 4rem;
@@ -57,5 +59,12 @@
         padding: 1.5rem;
       }
     }
+  }
+}
+
+@media (min-width: $breakpoint-desktop-xxl) {
+  .footer {
+    position: absolute;
+    bottom: 0;
   }
 }
