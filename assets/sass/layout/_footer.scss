@@ -42,3 +42,20 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-desktop-xl) {
+  .footer {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    &__newsletter {
+      width: 77%;
+    }
+    &__button {
+      width: 1%;
+      button {
+        padding: 1.5rem;
+      }
+    }
+  }
+}

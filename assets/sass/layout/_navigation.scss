@@ -59,8 +59,12 @@
 
 @media (min-width: $breakpoint-desktop-xl) {
   .nav {
+    position: static;
     &__logo {
       width: 5%;
+    }
+    &__list {
+      padding-top: 0.5rem;
     }
   }
 }
