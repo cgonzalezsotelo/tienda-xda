@@ -452,6 +452,24 @@ body {
   color: #646266;
 }
 
+@media (min-width: 768px) {
+  .main {
+    padding-bottom: 3rem;
+  }
+  .main__img {
+    height: 40vh;
+    object-fit: cover;
+  }
+  .main__container-text {
+    padding: 1rem 4rem;
+  }
+  .main__title {
+    width: 70%;
+  }
+  .main__text {
+    width: 70%;
+  }
+}
 .footer {
   width: 100%;
 }
@@ -480,6 +498,19 @@ body {
   background-color: #ffffff;
   border: none;
   padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer__newsletter {
+    width: 80%;
+    padding-left: 4rem;
+  }
+  .footer__button {
+    width: 5%;
+  }
+  .footer__button button {
+    padding: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -22,3 +22,22 @@
     color: $granite-gray;
   }
 }
+
+@media (min-width: $breakpoint-tablet-md) {
+  .main {
+    padding-bottom: 3rem;
+    &__img {
+      height: 40vh;
+      object-fit: cover;
+    }
+    &__container-text {
+      padding: 1rem 4rem;
+    }
+    &__title {
+      width: 70%;
+    }
+    &__text {
+      width: 70%;
+    }
+  }
+}

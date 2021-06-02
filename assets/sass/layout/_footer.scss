@@ -27,3 +27,18 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-tablet-md) {
+  .footer {
+    &__newsletter {
+      width: 80%;
+      padding-left: 4rem;
+    }
+    &__button {
+      width: 5%;
+      button {
+        padding: 0.8rem;
+      }
+    }
+  }
+}
