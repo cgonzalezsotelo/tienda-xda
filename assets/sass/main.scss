@@ -1,2 +1,9 @@
 // Abstracts
 @import "abstracts/variables";
+
+// Layout
+@import "layout/navigation";
+@import "layout/main";
+
+// Vendors
+@import "vendors/normalize";
