@@ -56,3 +56,11 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-desktop-xl) {
+  .nav {
+    &__logo {
+      width: 5%;
+    }
+  }
+}
