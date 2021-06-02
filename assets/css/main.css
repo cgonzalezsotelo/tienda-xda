@@ -337,12 +337,6 @@ template {
   display: none;
 }
 
-/* Variables */
-/* Color Scheme */
-/* Typography */
-/* Typeface */
-/* Font Weight */
-/* Font Sizes */
 html,
 body {
   margin: 0;
@@ -395,6 +389,9 @@ body {
   font-size: 18px;
   font-family: "Old Standard TT", serif;
 }
+.nav__list {
+  display: none;
+}
 .nav__burger {
   display: inline-block;
   position: relative;
@@ -410,6 +407,26 @@ body {
   border-radius: 5px;
 }
 
+@media (min-width: 768px) {
+  .nav__list {
+    display: inline-block;
+    float: right;
+    padding-top: 1rem;
+  }
+  .nav__item {
+    display: inline-block;
+    padding-right: 3rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  .nav__item a {
+    text-decoration: none;
+    color: #0c0910;
+  }
+  .nav__burger {
+    display: none;
+  }
+}
 .main {
   width: 100%;
   margin-top: 4rem;

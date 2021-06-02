@@ -15,6 +15,9 @@
     font-size: $large;
     font-family: $old-standard;
   }
+  &__list {
+    display: none;
+  }
   &__burger {
     display: inline-block;
     position: relative;
@@ -28,5 +31,28 @@
     border: 2px solid $smoky-black;
     margin: 0.2rem 0;
     border-radius: 5px;
+  }
+}
+
+@media (min-width: $breakpoint-tablet-md) {
+  .nav {
+    &__list {
+      display: inline-block;
+      float: right;
+      padding-top: 1rem;
+    }
+    &__item {
+      display: inline-block;
+      padding-right: 3rem;
+      font-family: $raleway;
+      font-weight: $raleway-bold;
+      a {
+        text-decoration: none;
+        color: $smoky-black;
+      }
+    }
+    &__burger {
+      display: none;
+    }
   }
 }

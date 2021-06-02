@@ -1,5 +1,5 @@
-/* Variables */
-/* Color Scheme */
+// Variables
+// Color Scheme
 $white: #ffffff;
 $isabellline: #ececec;
 $light-gray: #d1d1d1;
@@ -7,20 +7,18 @@ $smoky-black: #0c0910;
 $granite-gray: #646266;
 $quick-silver: #a6a5a8;
 
-/* Typography */
-
-/* Typeface */
+//Typography
+// Typeface
 $old-standard: "Old Standard TT", serif;
 $raleway: "Raleway", sans-serif;
 
-/* Font Weight */
+// Font Weight
 $old-standard-regular: 400;
 $old-standard-bold: 700;
-
 $raleway-regular: 400;
 $raleway-bold: 700;
 
-/* Font Sizes */
+// Font Sizes
 $xxx-large: 50px;
 $xx-large: 30px;
 $x-large: 20px;
@@ -28,3 +26,8 @@ $large: 18px;
 $medium: 16px;
 $small: 14px;
 $x-small: 12px;
+
+// Media Query Breakpoints
+$breakpoint-tablet-md: 768px;
+$breakpoint-desktop-lg: 992px;
+$breakpoint-desktop-xl: 1200px;
